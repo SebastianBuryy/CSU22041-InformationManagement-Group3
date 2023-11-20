@@ -1,0 +1,27 @@
+<!DOCTYPE CustomerAccount [
+  <!ELEMENT CustomerAccount (Account+)>
+  <!ELEMENT Account (CustomerAccount.CustomerID, CustomerAccount.Name, CustomerAccount.AccountStatus, CustomerAccount.LoyaltyPoints, CustomerAccount.Email, CustomerAccount.Phone_Number, CustomerAccount.Payment_Information, CustomerAccount.Past_Events, CustomerAccount.Upcoming_Events)>
+  <!ELEMENT CustomerAccount.Name (#PCDATA)>
+  <!ELEMENT CustomerAccount.AccountStatus (#PCDATA)>
+  <!ELEMENT CustomerAccount.LoyaltyPoints (#PCDATA)>
+  <!ELEMENT CustomerAccount.Email (#PCDATA)>
+  <!ELEMENT CustomerAccount.Phone_Number (#PCDATA)>
+  <!ELEMENT CustomerAccount.Payment_Information (#PCDATA)>
+  <!ELEMENT CustomerAccount.Past_Events (#PCDATA)>
+  <!ELEMENT CustomerAccount.Upcoming_Events (#PCDATA)>
+  <!ELEMENT CustomerAccount.CustomerID (#PCDATA)>
+  <!ATTLIST CustomerAccount.CustomerID id CDATA #REQUIRED>
+]>
+
+<CustomerAccount>
+    <CustomerAccount.CustomerID id="1">
+      <CustomerAccount.Name>LeelaMurphy</CustomerAccount.Name>
+      <CustomerAccount.AccountStatus>true</CustomerAccount.AccountStatus>
+      <CustomerAccount.LoyaltyPoints>100</CustomerAccount.LoyaltyPoints>
+      <CustomerAccount.Email>murphl58@tcd.ie</CustomerAccount.Email>
+      <CustomerAccount.Phone_Number>83 106 8734</CustomerAccount.Phone_Number>
+      <CustomerAccount.Payment_Information>123412341234 09/24 333</CustomerAccount.Payment_Information>
+      <CustomerAccount.Past_Events>Greenday</CustomerAccount.Past_Events>
+      <CustomerAccount.Upcoming_Events>Taylor Swift, Foo Fighters</CustomerAccount.Upcoming_Events>
+      </CustomerAccount.CustomerID>
+      </CustomerAccount>

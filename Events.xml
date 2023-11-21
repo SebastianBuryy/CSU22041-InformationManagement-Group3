@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE Events [
+    <!ELEMENT Events (Event+)>
+    <!ELEMENT Event (Event.name, Event.performer, Event.date, Event.venue, Event.organiser)>
+    <!ATTLIST Event type CDATA #IMPLIED>
+    <!ELEMENT Event.name (#PCDATA)>
+    <!ELEMENT Event.performer (#PCDATA)>
+    <!ELEMENT Event.date (#PCDATA)>
+    <!ELEMENT Event.venue (EventVenue)>
+    <!ELEMENT Event.organiser (EventOrganiser)>
+
+    <!ELEMENT EventVenue (Venue.name, Venue.location, Venue.capacity)>
+    <!ELEMENT Venue.name (#PCDATA)>
+    <!ELEMENT Venue.location (#PCDATA)>
+    <!ELEMENT Venue.capacity (#PCDATA)>
+
+    <!ELEMENT EventOrganiser (Organiser.name)>
+    <!ELEMENT Organiser.name (#PCDATA)>
+]>
+
+<Events>
+    <Event type="Rugby Match">
+        <Event.name>World Cup Final</Event.name>
+        <Event.performer>New Zealand v South Africa</Event.performer>
+        <Event.date>28/10/2023</Event.date>
+        <Event.venue>
+            <EventVenue>
+                <Venue.name>Stade De France</Venue.name>
+                <Venue.location>Saint-Denis, Paris</Venue.location>
+                <Venue.capacity>80698</Venue.capacity>
+            </EventVenue>
+        </Event.venue>
+        <Event.organiser>
+            <EventOrganiser>
+                <Organiser.name>World Rugby Federation</Organiser.name>
+            </EventOrganiser>
+        </Event.organiser>
+    </Event>
+
+    <Event type="Concert">
+        <Event.name>Eras Tour</Event.name>
+        <Event.performer>Taylor Swift</Event.performer>
+        <Event.date>30/06/2024</Event.date>
+        <Event.venue>
+            <EventVenue>
+                <Venue.name>Aviva Stadium</Venue.name>
+                <Venue.location>Landsdowne, Dublin</Venue.location>
+                <Venue.capacity>51711</Venue.capacity>
+            </EventVenue>
+        </Event.venue>
+        <Event.organiser>
+            <EventOrganiser>
+                <Organiser.name>MCD</Organiser.name>
+            </EventOrganiser>
+        </Event.organiser>
+    </Event>
+
+    <Event type="Comedy Show">
+        <Event.name>Laughs Funny</Event.name>
+        <Event.performer>Jimmy Carr</Event.performer>
+        <Event.date>22/05/2024</Event.date>
+        <Event.venue>
+            <EventVenue>
+                <Venue.name>Olympia Theatre</Venue.name>
+                <Venue.location>Dame Street, Dublin</Venue.location>
+                <Venue.capacity>1621</Venue.capacity>
+            </EventVenue>
+        </Event.venue>
+        <Event.organiser>
+            <EventOrganiser>
+                <Organiser.name>Irish Comedy Guide</Organiser.name>
+            </EventOrganiser>
+        </Event.organiser>
+    </Event>
+</Events>

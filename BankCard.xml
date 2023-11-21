@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE BankCard[ 
 <!ELEMENT BankCard (Payment_Information+)>
-
 <!ELEMENT Payment_Information (Card_Type, Card_Number, Cardholder, Card_Expiration_Date, CVV, Purchase_Status)>
 <!ELEMENT Card_Type (#PCDATA)>
 <!ELEMENT Card_Number (#PCDATA)>
@@ -30,6 +29,7 @@
         <CVV>212</CVV>
         <Purchase_Status>Pending</Purchase_Status>
      </Payment_Information>
+    
     <!-- Another instance of BankCard -->
     <Payment_Information>
          <Card_Type>Mastercard</Card_Type>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE BankCard[ 
+<!ELEMENT BankCard (Payment_Information+)>
+
+<!ELEMENT Payment_Information (Card_Type, Card_Number, Cardholder, Card_Expiration_Date, CVV, Purchase_Status)>
+<!ELEMENT Card_Type (#PCDATA)>
+<!ELEMENT Card_Number (#PCDATA)>
+<!ELEMENT Cardholder (#PCDATA)>
+<!ELEMENT Card_Expiration_Date (#PCDATA)>
+<!ELEMENT CVV (#PCDATA)>
+<!ELEMENT Purchase_Status (#PCDATA)>
+]>
+
+<BankCard>
+    <Payment_Information>
+        <Card_Type>Visa</Card_Type>
+        <Card_Number>3014-5278-9128-4065</Card_Number>
+        <Cardholder>Jacob Murray</Cardholder>
+        <Card_Expiration_Date>04/27</Card_Expiration_Date>
+        <CVV>627</CVV>
+        <Purchase_Status>Complete</Purchase_Status>
+    </Payment_Information>
+
+      <!-- Another instance of BankCard -->
+    <Payment_Information>
+        <Card_Type>Visa</Card_Type>
+        <Card_Number>6901-3817-4578-9217</Card_Number>
+        <Cardholder>Melissa Doyle</Cardholder>
+        <Card_Expiration_Date>09/26</Card_Expiration_Date>
+        <CVV>212</CVV>
+        <Purchase_Status>Pending</Purchase_Status>
+     </Payment_Information>
+    <!-- Another instance of BankCard -->
+    <Payment_Information>
+         <Card_Type>Mastercard</Card_Type>
+         <Card_Number>7365-4981-2064-8431</Card_Number>
+         <Cardholder>Matthew John Kenny</Cardholder>
+         <Card_Expiration_Date>03/28</Card_Expiration_Date>
+         <CVV>392</CVV>
+         <Purchase_Status>Complete</Purchase_Status>
+    </Payment_Information>
+</BankCard>

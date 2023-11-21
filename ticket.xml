@@ -17,26 +17,26 @@
         <TicketPrice>75.50</TicketPrice>
         <TicketAvailability>50</TicketAvailability>
         <TicketType>Student</TicketType>
-        <EventDate>2023-11-15</EventDate>
-        <SeatNumber>B5</SeatNumber>
-        <VenueLocation>Conference Center</VenueLocation>
+        <EventDate>14/09/2024</EventDate>
+        <SeatNumber>B54</SeatNumber>
+        <VenueLocation>3 Arena</VenueLocation>
     </Ticket>
     <!-- Another instance of Ticket -->
     <Ticket Number="796">
-        <TicketPrice>120.00</TicketPrice>
+        <TicketPrice>200.00</TicketPrice>
         <TicketAvailability>20</TicketAvailability>
         <TicketType>VIP</TicketType>
-        <EventDate>2023-12-05</EventDate>
-        <SeatNumber>C8</SeatNumber>
-        <VenueLocation>Stadium</VenueLocation>
+        <EventDate>27/05/2024</EventDate>
+        <SeatNumber>C81</SeatNumber>
+        <VenueLocation>Aviva Stadium</VenueLocation>
     </Ticket>
     <!-- Another instance of Ticket -->
     <Ticket Number="1265">
         <TicketPrice>90.00</TicketPrice>
         <TicketAvailability>30</TicketAvailability>
-        <TicketType>General</TicketType>
-        <EventDate>2023-11-20</EventDate>
-        <SeatNumber>A7</SeatNumber>
-        <VenueLocation>Auditorium</VenueLocation>
+        <TicketType>Standard</TicketType>
+        <EventDate>25/11/2023</EventDate>
+        <SeatNumber>A72</SeatNumber>
+        <VenueLocation>BGE Theatre</VenueLocation>
     </Ticket>
 </Tickets>

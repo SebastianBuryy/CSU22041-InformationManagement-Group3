@@ -1,0 +1,42 @@
+<!-- Document Type Definition (DTD) -->
+<!DOCTYPE Tickets [
+    <!ELEMENT Tickets (Ticket+)>
+    <!ELEMENT Ticket (TicketPrice, TicketAvailability, TicketType, EventDate, SeatNumber, VenueLocation)>
+    <!ATTLIST Ticket Number CDATA #REQUIRED>
+    <!ELEMENT TicketPrice (#PCDATA)>
+    <!ELEMENT TicketAvailability (#PCDATA)>
+    <!ELEMENT TicketType (#PCDATA)>
+    <!ELEMENT EventDate (#PCDATA)>
+    <!ELEMENT SeatNumber (#PCDATA)>
+    <!ELEMENT VenueLocation (#PCDATA)>
+]>
+
+<!-- XML Structure for UML Class "Ticket" -->
+<Tickets>
+    <Ticket Number="148">
+        <TicketPrice>75.50</TicketPrice>
+        <TicketAvailability>50</TicketAvailability>
+        <TicketType>Student</TicketType>
+        <EventDate>2023-11-15</EventDate>
+        <SeatNumber>B5</SeatNumber>
+        <VenueLocation>Conference Center</VenueLocation>
+    </Ticket>
+    <!-- Another instance of Ticket -->
+    <Ticket Number="796">
+        <TicketPrice>120.00</TicketPrice>
+        <TicketAvailability>20</TicketAvailability>
+        <TicketType>VIP</TicketType>
+        <EventDate>2023-12-05</EventDate>
+        <SeatNumber>C8</SeatNumber>
+        <VenueLocation>Stadium</VenueLocation>
+    </Ticket>
+    <!-- Another instance of Ticket -->
+    <Ticket Number="1265">
+        <TicketPrice>90.00</TicketPrice>
+        <TicketAvailability>30</TicketAvailability>
+        <TicketType>General</TicketType>
+        <EventDate>2023-11-20</EventDate>
+        <SeatNumber>A7</SeatNumber>
+        <VenueLocation>Auditorium</VenueLocation>
+    </Ticket>
+</Tickets>

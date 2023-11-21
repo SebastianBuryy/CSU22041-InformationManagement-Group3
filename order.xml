@@ -1,0 +1,38 @@
+<!-- Document Type Definition (DTD) -->
+<!DOCTYPE Orders [
+    <!ELEMENT Orders (Order+)>
+    <!ELEMENT Order (Ticket_Quantity, Order_Date, Order_Status, Payment_Method, Billing_Address)>
+    <!ELEMENT Ticket_Quantity (#PCDATA)>
+    <!ELEMENT Order_Date (#PCDATA)>
+    <!ELEMENT Order_Status (#PCDATA)>
+    <!ELEMENT Payment_Method (#PCDATA)>
+    <!ELEMENT Billing_Address (#PCDATA)>
+    <!ATTLIST Order Number CDATA #REQUIRED>
+]>
+
+<!-- XML Structure for UML Class "Order" -->
+<Orders>
+    <Order Number="147">
+        <Ticket_Quantity>2</Ticket_Quantity>
+        <Order_Date>07-11-2023</Order_Date>
+        <Order_Status>Confirmed</Order_Status>
+        <Payment_Method>Credit Card</Payment_Method>
+        <Billing_Address>40 Hillhead Road, Navan, County Meath</Billing_Address>
+    </Order>
+    <!-- Another instance of Order -->
+    <Order Number="258">
+        <Ticket_Quantity>1</Ticket_Quantity>
+        <Order_Date>23-09-2023</Order_Date>
+        <Order_Status>Pending</Order_Status>
+        <Payment_Method>PayPal</Payment_Method>
+        <Billing_Address>16 Oak Street, Ballyfermot, County Dublin</Billing_Address>
+    </Order>
+    <!-- Another instance of Order -->
+    <Order Number="1036">
+        <Ticket_Quantity>4</Ticket_Quantity>
+        <Order_Date>12-02-2022</Order_Date>
+        <Order_Status>Cancelled</Order_Status>
+        <Payment_Method>Bank Transfer</Payment_Method>
+        <Billing_Address>30 Meadow Springs, Castlebar, County Mayo</Billing_Address>
+    </Order>
+</Orders>

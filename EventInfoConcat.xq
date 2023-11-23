@@ -4,10 +4,8 @@ return
   <EventInfo>
       { fn:concat(
           data($event/Event.name),
-          ', ',
-          data($event/Event.date),
-          ', ',
-          data($event/Event.venue/EventVenue/Venue.capacity)
+          ', ', data($event/Event.performer),
+          ', ', data($event/Event.date)
         )
       }
   </EventInfo>

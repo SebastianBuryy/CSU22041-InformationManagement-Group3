@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE BankCard[ 
 <!ELEMENT BankCard (Payment_Information+)>
-<!ELEMENT Payment_Information (Card_Type, Card_Number, Cardholder, Card_Expiration_Date, CVV, Purchase_Status)>
+<!ELEMENT Payment_Information (Card_Type, Card_Number, Cardholder, Card_Expiration_Date, CVV, Total, Purchase_Status)>
 <!ELEMENT Card_Type (#PCDATA)>
 <!ELEMENT Card_Number (#PCDATA)>
 <!ELEMENT Cardholder (#PCDATA)>
 <!ELEMENT Card_Expiration_Date (#PCDATA)>
 <!ELEMENT CVV (#PCDATA)>
+<!ELEMENT Total (#PCDATA)>
 <!ELEMENT Purchase_Status (#PCDATA)>
 ]>
 
@@ -17,6 +18,7 @@
         <Cardholder>Jacob Murray</Cardholder>
         <Card_Expiration_Date>04/27</Card_Expiration_Date>
         <CVV>627</CVV>
+        <Total>76.99</Total>
         <Purchase_Status>Complete</Purchase_Status>
     </Payment_Information>
 
@@ -27,6 +29,7 @@
         <Cardholder>Melissa Doyle</Cardholder>
         <Card_Expiration_Date>09/26</Card_Expiration_Date>
         <CVV>212</CVV>
+        <Total>31.50</Total>
         <Purchase_Status>Pending</Purchase_Status>
      </Payment_Information>
     
@@ -37,6 +40,7 @@
          <Cardholder>Matthew John Kenny</Cardholder>
          <Card_Expiration_Date>03/28</Card_Expiration_Date>
          <CVV>392</CVV>
+         <Total>186.83</Total>
          <Purchase_Status>Complete</Purchase_Status>
     </Payment_Information>
 </BankCard>

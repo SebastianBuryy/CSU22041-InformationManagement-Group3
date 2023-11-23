@@ -1,0 +1,2 @@
+let $averageLoyaltyPoints := avg(//CustomerAccount/CustomerAccount.LoyaltyPoints/xs:double(.))
+return $averageLoyaltyPoints

@@ -1,0 +1,6 @@
+for $name in doc("CustomerAccount.xml")/CustomerAccount/CustomerAccount.CustomerID/CustomerAccount.Name
+for $email in doc("CustomerAccount.xml")/CustomerAccount/CustomerAccount.CustomerID/CustomerAccount.Email
+for $number in doc("CustomerAccount.xml")/CustomerAccount/CustomerAccount.CustomerID/CustomerAccount.Phone_Number
+
+return
+("Contact Info:", $name, $email, $number)

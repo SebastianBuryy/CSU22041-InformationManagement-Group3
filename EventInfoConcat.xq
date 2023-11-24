@@ -1,7 +1,7 @@
 //Built In Querey
 for $event in doc("events.xml")//Event
 return
-  <EventInfo>
+ string-join(<EventInfo>
       { fn:concat(
           data($event/Event.name),
           ', ', data($event/Event.performer),
@@ -11,3 +11,5 @@ return
         )
       }
   </EventInfo>
+)
+

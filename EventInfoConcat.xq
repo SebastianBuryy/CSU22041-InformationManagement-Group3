@@ -3,11 +3,11 @@ for $event in doc("events.xml")//Event
 return
  string-join(<EventInfo>
       { fn:concat(
-          data($event/Event.name),
-          ', ', data($event/Event.performer),
-          ', ', data($event/Event.date),
-          ', ', data($event/Event.venue/EventVenue/Venue.name),
-          ', ', data($event/Event.venue/EventVenue/Venue.location)
+         'Event: ', data($event/Event.name),
+          ' , Performer : ', data($event/Event.performer),
+          ' , Date : ', data($event/Event.date),
+          ' , Venue : ', data($event/Event.venue/EventVenue/Venue.name),
+          ' , Location : ', data($event/Event.venue/EventVenue/Venue.location)
         )
       }
   </EventInfo>

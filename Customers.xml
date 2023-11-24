@@ -1,0 +1,44 @@
+<!DOCTYPE Customers [
+  <!ELEMENT Customers (Customer+)>
+  <!ELEMENT Customer (User.User_Email, User.User_Password, Customer.name?, Customer.telephone_number, Customer.address, Customer.EventPreference*)>
+  <!ATTLIST Customer CustomerID CDATA #REQUIRED>
+
+  <!ELEMENT User.User_Email (#PCDATA)>
+  <!ELEMENT User.User_Password (#PCDATA)>
+
+  <!ELEMENT Customer.name (#PCDATA)>
+  <!ELEMENT Customer.telephone_number (#PCDATA)>
+  <!ELEMENT Customer.address (#PCDATA)>
+  <!ELEMENT Customer.EventPreference (#PCDATA)>
+]>
+
+<Customers>
+  <Customer CustomerID="1">
+    <User.User_Email>John9@gmail.com</User.User_Email>
+    <User.User_Password>JohnBourke34</User.User_Password>
+    <Customer.name>John Bourke</Customer.name>
+    <Customer.telephone_number>0867836532</Customer.telephone_number>
+    <Customer.address>78 Under Well Road, Dublin 7</Customer.address>
+    <Customer.EventPreference>Musicals</Customer.EventPreference>
+  </Customer>
+
+  <Customer CustomerID="2">
+    <User.User_Email>LucyBurke@gmail.com</User.User_Email>
+    <User.User_Password>LucyBurke789</User.User_Password>
+    <Customer.CustomerName>Lucy Burke</Customer.CustomerName>
+    <Customer.telephone_number>0869876543</Customer.telephone_number>
+    <Customer.address>25 Pine Street, Townsville</Customer.address>
+    <!-- No Event Preference -->
+  </Customer>
+
+  <Customer CustomerID="3">
+    <User.User_Email>FredSmith@gmail.com</User.User_Email>
+    <User.User_Password>FredSmith456</User.User_Password>
+    <Customer.CustomerName>Frederick Smith</Customer.CustomerName>
+    <Customer.telephone_number>0898765432</Customer.telephone_number>
+    <Customer.address>8 Maple Avenue, Villagetown</Customer.address>
+    <Customer.EventPreference>Musicals</Customer.EventPreference>
+    <Customer.EventPreference>Comedy</Customer.EventPreference>
+    <Customer.EventPreference>Horror</Customer.EventPreference>
+  </Customer>
+</Customers>

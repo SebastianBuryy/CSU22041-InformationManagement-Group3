@@ -1,0 +1,70 @@
+<!-- Document Type Definition (DTD) -->
+<!DOCTYPE Bank [
+  <!ELEMENT Bank (Customer+)>
+  <!ELEMENT Customer (Customer_Name, Bank_Information)>
+  <!ATTLIST Customer Customer_ID CDATA #REQUIRED>
+  <!ELEMENT Customer_Name (#PCDATA)>
+
+  <!ELEMENT Bank_Information (Bank_Name, Branch_ID, Bank_Card, Purchase_Status)>
+  <!ELEMENT Bank_Name (#PCDATA)>
+  <!ELEMENT Branch_ID (#PCDATA)>
+  <!ELEMENT Purchase_Status (#PCDATA)>
+
+  <!ELEMENT Bank_Card (Card_Type, Card_Number, Cardholder, Card_Expiration_Date, CVV)>
+  <!ELEMENT Card_Type (#PCDATA)>
+  <!ELEMENT Card_Number (#PCDATA)>
+  <!ELEMENT Cardholder (#PCDATA)>
+  <!ELEMENT Card_Expiration_Date (#PCDATA)>
+  <!ELEMENT CVV (#PCDATA)>
+]>
+
+<!-- XML Structure for UML Class "Bank" -->
+<Bank>
+  <Customer Customer_ID="146">
+    <Customer_Name>Jacob Murray</Customer_Name>
+    <Bank_Information>
+      <Bank_Name>AIB</Bank_Name>
+      <Branch_ID>AIBKIE2D</Branch_ID>
+      <Bank_Card>
+        <Card_Type>Visa</Card_Type>
+        <Card_Number>3014-5278-9128-4065</Card_Number>
+        <Cardholder>Jacob Murray</Cardholder>
+        <Card_Expiration_Date>04/27</Card_Expiration_Date>
+        <CVV>627</CVV>
+      </Bank_Card>
+      <Purchase_Status>Confirmed</Purchase_Status>
+    </Bank_Information>
+  </Customer>
+
+  <Customer Customer_ID="712">
+    <Customer_Name>Lara Doyle</Customer_Name>
+    <Bank_Information>
+      <Bank_Name>BIK</Bank_Name>
+      <Branch_ID>BOFIIE2D</Branch_ID>
+      <Bank_Card>
+        <Card_Type>Visa</Card_Type>
+        <Card_Number>6901-3817-4578-9217</Card_Number>
+        <Cardholder>Melissa Doyle</Cardholder>
+        <Card_Expiration_Date>09/26</Card_Expiration_Date>
+        <CVV>212</CVV>
+      </Bank_Card>
+      <Purchase_Status>Complete</Purchase_Status>
+    </Bank_Information>
+  </Customer>
+
+  <Customer Customer_ID="362">
+    <Customer_Name>Matthew Kenny</Customer_Name>
+    <Bank_Information>
+      <Bank_Name>Revolut</Bank_Name>
+      <Branch_ID>REVOLUT21</Branch_ID>
+      <Bank_Card>
+        <Card_Type>Mastercard</Card_Type>
+        <Card_Number>7365-4981-2064-8431</Card_Number>
+        <Cardholder>Matthew John Kenny</Cardholder>
+        <Card_Expiration_Date>03/28</Card_Expiration_Date>
+        <CVV>392</CVV>
+      </Bank_Card>
+      <Purchase_Status>Cancelled</Purchase_Status>
+    </Bank_Information>
+  </Customer>
+</Bank>

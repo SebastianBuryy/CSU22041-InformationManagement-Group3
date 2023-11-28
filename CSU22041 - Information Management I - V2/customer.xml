@@ -1,0 +1,51 @@
+<!-- Document Type Definition (DTD) -->
+<!DOCTYPE Customers [
+  <!ELEMENT Customers (Customer+)>
+  <!ELEMENT Customer (User_Email, User_Password, Name, Telephone_Number, Address, EventPreference*)>
+  <!ELEMENT User_Email (#PCDATA)>
+  <!ELEMENT User_Password (#PCDATA)>
+  <!ELEMENT Name (#PCDATA)>
+  <!ELEMENT Telephone_Number (#PCDATA)>
+  <!ELEMENT Address (#PCDATA)>
+  <!ELEMENT EventPreference (#PCDATA)>
+  <!ATTLIST Customer ID CDATA #REQUIRED>
+]>
+
+<!-- XML Structure for UML Class "Customer" -->
+<Customers>
+  <Customer ID="5">
+    <User_Email>John9@gmail.com</User_Email>
+    <User_Password>JohnBourke34</User_Password>
+    <Name>John Bourke</Name>
+    <Telephone_Number>0867836532</Telephone_Number>
+    <Address>78 Under Well Road, Dublin 7</Address>
+    <EventPreference>Comedy Show</EventPreference>
+  </Customer>
+<!-- Another instance of Customer -->
+  <Customer ID="10">
+    <User_Email>tomhughes@gmail.com</User_Email>
+    <User_Password>Tommy!123</User_Password>
+    <Name>Tom Hughes</Name>
+    <Telephone_Number>0857123456</Telephone_Number>
+    <Address>42 Oak Springs, Charlesville</Address>
+    <EventPreference>Concert</EventPreference>
+  </Customer>
+<!-- Another instance of Customer -->
+  <Customer ID="15">
+    <User_Email>mark85@gmail.com</User_Email>
+    <User_Password>MarkSmith123</User_Password>
+    <Name>Mark Smith</Name>
+    <Telephone_Number>0894340664</Telephone_Number>
+    <Address>Ashbourne, County Meath</Address>
+    <EventPreference>Sports</EventPreference>
+  </Customer>
+  <!-- Another instance of Customer -->
+  <Customer ID="20">
+    <User_Email>maria654@gmail.com</User_Email>
+    <User_Password>MariaOC</User_Password>
+    <Name>Maria O'Connell</Name>
+    <Telephone_Number>0838769422</Telephone_Number>
+    <Address>22 Magdelane St, Drogheda</Address>
+    <!-- No event preference -->
+  </Customer>
+</Customers>

@@ -1,0 +1,64 @@
+<!-- Document Type Definition (DTD) -->
+<!DOCTYPE Events [
+    <!ELEMENT Events (Event+)>
+    <!ELEMENT Event (ID, EventName, EventPerformer, EventDate, EventVenue, EventOrganiser)>
+    <!ATTLIST Event Type CDATA #IMPLIED>
+
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT EventName (#PCDATA)>
+    <!ELEMENT EventPerformer (#PCDATA)>
+    <!ELEMENT EventDate (#PCDATA)>
+
+    <!ELEMENT EventVenue (VenueName, VenueLocation, VenueCapacity)>
+    <!ELEMENT VenueName (#PCDATA)>
+    <!ELEMENT VenueLocation (#PCDATA)>
+    <!ELEMENT VenueCapacity (#PCDATA)>
+
+    <!ELEMENT EventOrganiser (OrganiserName)>
+    <!ELEMENT OrganiserName (#PCDATA)>
+]>
+
+<!-- XML Structure for UML Class "Event" -->
+<Events>
+    <Event Type="Sports">
+        <EventName>Rugby World Cup Final</EventName>
+        <EventPerformer>New Zealand vs South Africa</EventPerformer>
+        <EventDate>28/10/2023</EventDate>
+        <EventVenue>
+            <VenueName>Stade De France</VenueName>
+            <VenueLocation>Saint-Denis, Paris</VenueLocation>
+            <VenueCapacity>80698</VenueCapacity>
+        </EventVenue>
+        <EventOrganiser>
+            <OrganiserName>World Rugby Federation</OrganiserName>
+        </EventOrganiser>
+    </Event>
+    <!-- Another instance of Event -->
+    <Event Type="Concert">
+        <EventName>Eras Tour</EventName>
+        <EventPerformer>Taylor Swift</EventPerformer>
+        <EventDate>30/06/2024</EventDate>
+        <EventVenue>
+            <VenueName>Aviva Stadium</VenueName>
+            <VenueLocation>Landsdowne, Dublin</VenueLocation>
+            <VenueCapacity>51711</VenueCapacity>
+        </EventVenue>
+        <EventOrganiser>
+            <OrganiserName>MCD</OrganiserName>
+        </EventOrganiser>
+    </Event>
+    <!-- Another instance of Event -->
+    <Event Type="Comedy Show">
+        <EventName>Laughs Funny</EventName>
+        <EventPerformer>Jimmy Carr</EventPerformer>
+        <EventDate>22/05/2024</EventDate>
+        <EventVenue>
+            <VenueName>Olympia Theatre</VenueName>
+            <VenueLocation>Dame Street, Dublin</VenueLocation>
+            <VenueCapacity>1621</VenueCapacity>
+        </EventVenue>
+        <EventOrganiser>
+            <OrganiserName>Irish Comedy Guide</OrganiserName>
+        </EventOrganiser>
+    </Event>
+</Events>

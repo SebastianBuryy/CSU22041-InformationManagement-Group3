@@ -1,0 +1,49 @@
+<!-- Document Type Definition (DTD) -->
+<!DOCTYPE Users [
+    <!ELEMENT Users (User+)>
+    <!ELEMENT User (User_Login, User_Status, User_Phone, User_DOB)>
+    <!ATTLIST User
+        ID ID #REQUIRED
+        Name CDATA #REQUIRED>
+
+    <!ELEMENT User_Login (User_Email, User_Password)>
+    <!ELEMENT User_Email (#PCDATA)>
+    <!ELEMENT User_Password (#PCDATA)>
+
+    <!ELEMENT User_Status (#PCDATA)>
+    <!ELEMENT User_Phone (#PCDATA)>
+    <!ELEMENT User_DOB (#PCDATA)>
+]>
+
+<!-- XML Structure for UML Class "User" -->
+<Users>
+    <User ID="148" Name="Alice Newman">
+        <User_Login>
+            <User_Email>alice12newman@yahoo.com</User_Email>
+            <User_Password>freddyK!99</User_Password>
+        </User_Login>
+        <User_Status>Active</User_Status>
+        <User_Phone>0872839822</User_Phone>
+        <User_DOB>12/08/99</User_DOB>
+    </User>
+    <!-- Another instance of User -->
+    <User ID="256" Name="John May">
+        <User_Login>
+            <User_Email>mayjohn@gmail.com</User_Email>
+            <User_Password>p@ris@night2003</User_Password>
+        </User_Login>
+        <User_Status>Offline</User_Status>
+        <User_Phone>0893221743</User_Phone>
+        <User_DOB>10/02/03</User_DOB>
+    </User>
+    <!-- Another instance of User -->
+    <User ID="678" Name="Frank Murphy">
+        <User_Login>
+            <User_Email>frank92murphy@gmail.com</User_Email>
+            <User_Password>knarfscarf92!</User_Password>
+        </User_Login>
+        <User_Status>Inactive</User_Status>
+        <User_Phone>0853785999</User_Phone>
+        <User_DOB>16/05/92</User_DOB>
+    </User>
+</Users>

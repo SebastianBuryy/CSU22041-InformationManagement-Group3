@@ -1,0 +1,42 @@
+<!-- Document Type Definition (DTD) -->
+<!DOCTYPE Tickets [
+    <!ELEMENT Tickets (Ticket+)>
+    <!ELEMENT Ticket (TicketPrice, TicketAvailability, TicketType, EventDate, SeatNumber, VenueLocation)>
+    <!ATTLIST Ticket Number CDATA #REQUIRED>
+    <!ELEMENT TicketPrice (#PCDATA)>
+    <!ELEMENT TicketAvailability (#PCDATA)>
+    <!ELEMENT TicketType (#PCDATA)>
+    <!ELEMENT EventDate (#PCDATA)>
+    <!ELEMENT SeatNumber (#PCDATA)>
+    <!ELEMENT VenueLocation (#PCDATA)>
+]>
+
+<!-- XML Structure for UML Class "Ticket" -->
+<Tickets>
+    <Ticket Number="148">
+        <TicketPrice>75.50</TicketPrice>
+        <TicketAvailability>5000</TicketAvailability>
+        <TicketType>Student</TicketType>
+        <EventDate>14/09/2024</EventDate>
+        <SeatNumber>B54</SeatNumber>
+        <VenueLocation>3 Arena</VenueLocation>
+    </Ticket>
+    <!-- Another instance of Ticket -->
+    <Ticket Number="796">
+        <TicketPrice>200.00</TicketPrice>
+        <TicketAvailability>500</TicketAvailability>
+        <TicketType>VIP</TicketType>
+        <EventDate>27/05/2024</EventDate>
+        <SeatNumber>C81</SeatNumber>
+        <VenueLocation>Aviva Stadium</VenueLocation>
+    </Ticket>
+    <!-- Another instance of Ticket -->
+    <Ticket Number="1265">
+        <TicketPrice>90.00</TicketPrice>
+        <TicketAvailability>300</TicketAvailability>
+        <TicketType>Standard</TicketType>
+        <EventDate>25/11/2023</EventDate>
+        <SeatNumber>A72</SeatNumber>
+        <VenueLocation>BGE Theatre</VenueLocation>
+    </Ticket>
+</Tickets>

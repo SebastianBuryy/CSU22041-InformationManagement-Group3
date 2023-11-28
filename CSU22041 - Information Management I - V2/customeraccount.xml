@@ -1,0 +1,39 @@
+<!-- Document Type Definition (DTD) -->
+<!DOCTYPE CustomerAccounts [
+    <!ELEMENT CustomerAccounts (CustomerAccount+)>
+    <!ELEMENT CustomerAccount (Name, AccountStatus, LoyaltyPoints, Email, Phone_Number, Payment_Information, Past_Events, Upcoming_Events)>
+    <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT AccountStatus (#PCDATA)>
+    <!ELEMENT LoyaltyPoints (#PCDATA)>
+    <!ELEMENT Email (#PCDATA)>
+    <!ELEMENT Phone_Number (#PCDATA)>
+    <!ELEMENT Payment_Information (#PCDATA)>
+    <!ELEMENT Past_Events (#PCDATA)>
+    <!ELEMENT Upcoming_Events (#PCDATA)>
+    <!ATTLIST CustomerAccount ID CDATA #REQUIRED>
+]>
+
+<!-- XML Structure for UML Class "CustomerAccount" -->
+<CustomerAccounts>
+    <CustomerAccount ID="150">
+        <Name>Leela Murphy</Name>
+        <AccountStatus>Active</AccountStatus>
+        <LoyaltyPoints>100</LoyaltyPoints>
+        <Email>murphl58@tcd.ie</Email>
+        <Phone_Number>0831068734</Phone_Number>
+        <Payment_Information>1234123412341325 09/24 333</Payment_Information>
+        <Past_Events>Greenday</Past_Events>
+        <Upcoming_Events>Taylor Swift, Foo Fighters</Upcoming_Events>
+    </CustomerAccount>
+    <!-- Another instance of CustomerAccount -->
+    <CustomerAccount ID="601">
+        <Name>Jeff Kelly</Name>
+        <AccountStatus>Pending Verification</AccountStatus>
+        <LoyaltyPoints>25</LoyaltyPoints>
+        <Email>jkelly@gmail.com</Email>
+        <Phone_Number>0861239876</Phone_Number>
+        <Payment_Information>5637340943069645 07/25 437</Payment_Information>
+        <Past_Events>Hozier</Past_Events>
+        <Upcoming_Events>Mamma Mia, Anne-Marie</Upcoming_Events>
+    </CustomerAccount>
+</CustomerAccounts>

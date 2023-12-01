@@ -1,6 +1,7 @@
 <!DOCTYPE BankCard[ 
 <!ELEMENT BankCard (Payment_Information+)>
 <!ELEMENT Payment_Information (Card_Type, Card_Number, Cardholder, Card_Expiration_Date, CVV, Total, Purchase_Status)>
+<!ATTLIST Payment_Information User_ID CDATA #REQUIRED>
 <!ELEMENT Card_Type (#PCDATA)>
 <!ELEMENT Card_Number (#PCDATA)>
 <!ELEMENT Cardholder (#PCDATA)>
@@ -11,7 +12,7 @@
 ]>
 
 <BankCard>
-    <Payment_Information>
+    <Payment_Information  User_ID="916">
         <Card_Type>Visa</Card_Type>
         <Card_Number>3014-5278-9128-4065</Card_Number>
         <Cardholder>Jacob Murray</Cardholder>
@@ -22,7 +23,7 @@
     </Payment_Information>
 
       <!-- Another instance of BankCard -->
-    <Payment_Information>
+    <Payment_Information User_ID="741">
         <Card_Type>Visa</Card_Type>
         <Card_Number>6901-3817-4578-9217</Card_Number>
         <Cardholder>Melissa Doyle</Cardholder>
@@ -33,7 +34,7 @@
      </Payment_Information>
     
     <!-- Another instance of BankCard -->
-    <Payment_Information>
+    <Payment_Information User_ID="368">
          <Card_Type>Mastercard</Card_Type>
          <Card_Number>7365-4981-2064-8431</Card_Number>
          <Cardholder>Matthew John Kenny</Cardholder>
